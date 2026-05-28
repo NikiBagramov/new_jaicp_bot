@@ -6,7 +6,7 @@
     },
     "settings": {
         "language": "ru",
-        "spellingCorrection": false,
+        "spellingCorrection": true,
         "classificationAlgorithm": "sts",
         "validation": {
             "phraseValidationEnabled": true,
@@ -23,14 +23,38 @@
     },
     "intents": [
         {
-            "path": "/пока",
-            "description": null,
+            "path": "/hello",
+            "description": "Приветствие пользователя",
             "answer": null,
             "customData": null,
             "enabled": true,
             "phrases": [
                 {
-                    "text": "пока",
+                    "text": "привет",
+                    "entities": null
+                },
+                {
+                    "text": "здравствуй",
+                    "entities": null
+                },
+                {
+                    "text": "здравствуйте",
+                    "entities": null
+                },
+                {
+                    "text": "добрый день",
+                    "entities": null
+                },
+                {
+                    "text": "доброе утро",
+                    "entities": null
+                },
+                {
+                    "text": "добрый вечер",
+                    "entities": null
+                },
+                {
+                    "text": "хай",
                     "entities": null
                 }
             ],
@@ -38,14 +62,77 @@
             "slots": null
         },
         {
-            "path": "/привет",
-            "description": null,
+            "path": "/weather",
+            "description": "Запрос прогноза погоды",
             "answer": null,
             "customData": null,
             "enabled": true,
             "phrases": [
                 {
-                    "text": "привет",
+                    "text": "какая погода",
+                    "entities": null
+                },
+                {
+                    "text": "расскажи погоду",
+                    "entities": null
+                },
+                {
+                    "text": "что с погодой",
+                    "entities": null
+                },
+                {
+                    "text": "прогноз погоды",
+                    "entities": null
+                },
+                {
+                    "text": "будет дождь",
+                    "entities": null
+                },
+                {
+                    "text": "сколько градусов",
+                    "entities": null
+                },
+                {
+                    "text": "температура на улице",
+                    "entities": null
+                }
+            ],
+            "patterns": null,
+            "slots": null
+        },
+        {
+            "path": "/currency",
+            "description": "Запрос курса валют",
+            "answer": null,
+            "customData": null,
+            "enabled": true,
+            "phrases": [
+                {
+                    "text": "курс валют",
+                    "entities": null
+                },
+                {
+                    "text": "какой курс доллара",
+                    "entities": null
+                },
+                {
+                    "text": "курс евро",
+                    "entities": null
+                },
+                {
+                    "text": "сколько стоит доллар",
+                    "entities": null
+                },
+                {
+                    "text": "сколько стоит евро",
+                    "entities": null
+                },
+                {
+                    "text": "обменный курс",
+                    "entities": null
+                },
+                {
+                    "text": "валюта сегодня",
                     "entities": null
                 }
             ],
